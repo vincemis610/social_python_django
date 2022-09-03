@@ -18,7 +18,7 @@ def register(request):
             form.save()
             username = form.cleaned_data['username']
             messages.success(request, f'User {username} created success!')
-            return redirect('feed')
+            return redirect('login')
     else:
         form = UserRegisterForm()
     context = { 'form': form }
@@ -28,7 +28,7 @@ def register(request):
 def post(request):
     current_user = get_object_or_404(User, pk=request.user.pk)
     if request.method == 'POST':
-        form = PostForm(request.POST)
+        form = PostForm(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.user = current_user

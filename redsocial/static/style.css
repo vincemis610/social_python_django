@@ -1,16 +1,9 @@
 body{
-	background: #00acee;
+  background: #4267B2;
 	font-size: 62.5%;
 	font-family: 'roboto', Helvetica, Arial, serif;
 }
 /* Global Styles*/
-h1{
-
-}
-
-h2{
-}
-
 h5{
 	font-size: 1rem;
 	margin-bottom: 0;
@@ -26,7 +19,7 @@ button{
 	color: white;
 	padding: 0.4rem 1.4rem;
 	border: none;
-	background: #00acee;
+  background: #4267B2;
 	 border-radius: 4px;
 	cursor: pointer;
 
@@ -38,7 +31,7 @@ img{
 
 /* Nav bar */
 .main-head{
-	background: #00acee;
+  background: #4267B2;
 	color: white;
 }
 
@@ -82,7 +75,7 @@ nav.main ul li {
 a{
 	font-size: .93rem;
 	text-decoration: none;
-	color: black;
+  color: #2C3238;
 }
 
 
@@ -99,6 +92,8 @@ a{
 .second-nav{
 	display: flex;
 	padding: 15px 30px;
+  background: #d6d8da;
+    color: #fff;
 }
 
 .second-nav .feed{
@@ -122,8 +117,7 @@ a{
 .second-nav .new{
 	flex: 6 1 5rem;
 	text-align: right;
-	text-transform: uppercase;
-  	color: black;
+  color: #2C3238;
 }
 
 .second-nav .new:hover{
@@ -135,7 +129,7 @@ a{
 article{
 	width: 93%;
 	margin: auto;
-	padding: 40px 0;
+  padding: 10px 0;
 	border-bottom: 2px solid #ECEEEF;
 }
 
@@ -151,11 +145,16 @@ article{
   display: flex;
 }
 
-.container-article img{
-  height: 68px;
-  width: 68px;
+.container-article .user-profile {
+  height: 50px;
+  width: 50px;
   margin-right: 10px;
   border-radius: 50%;
+}
+.container-article .posts img {
+  margin-top: 10px;
+  height: 100px;
+  width: auto;
 }
 
 article:last-child {
@@ -227,10 +226,10 @@ input {
   background: #fff;
   padding: 20px 0 4px;
   margin: 0 0 20px;
-  color: #00acee;
+  color: #4267B2;
 }
 input:focus {
-  border-color: #00acee;
+  border-color: #4267B2;
   color: #2C3238;
 }
 textarea {
@@ -241,17 +240,17 @@ textarea {
   background: #fff;
   padding: 20px 0 4px;
   margin: 0 0 20px;
-  color: #00acee;
+  color: #4267B2;
 }
 textarea:focus {
-  border-color: #00acee;
+  border-color: #4267B2;
   color: #2C3238;
 }
 button#submit {
   width: 100%;
   padding: 20px 0;
   text-align: center;
-  background: #00acee;
+  background: #4267B2;
   color: #fff;
   border: 0;
   border-radius: 4px;

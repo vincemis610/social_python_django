@@ -16,7 +16,8 @@ class UserRegisterForm(UserCreationForm):
 class PostForm(forms.ModelForm):
     title = forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Titulo Post'}), required=True)
     description = forms.CharField(label='', widget=forms.Textarea(attrs={'rows':2, 'placeholder': 'Description Post'}), required=True)
+    image = forms.ImageField(label='Select file', widget=forms.FileInput(attrs={'style': 'border:none;'}))
     
     class Meta:
         model = Post
-        fields = ['title', 'description']
+        fields = ['title', 'description', 'image']

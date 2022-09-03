@@ -25,6 +25,7 @@ class Post(models.Model):
     timestamp = models.DateTimeField(default=timezone.now)
     title = models.CharField(max_length=150)
     description = models.TextField()
+    image = models.ImageField(null=True, blank=True, upload_to='posts/')
     
     class Meta:
         ordering = ['-timestamp']

@@ -7,16 +7,17 @@
 {% for post in posts %}
 <article>
     <div class="container-article">
-        <img src="{{ post.user.profile.image.url }}">
+        <img class="user-profile" src="{{ post.user.profile.image.url }}">
         <div>
             <h2 class="username"><a href="{% url 'profile' post.user.username %}">@{{ post.user.username }}</a></h2>
-            {% comment %} <i class="clock"></i>{% endcomment %}
-            
             <div class="post">
                 {{ post.title }}
                 <time data-time="#">{{ post.timestamp|naturaltime }}</time>
             </div>
             <div class="description">{{ post.description }}</div>
+            <div class="posts">
+                <img class="post-img" src="/media/{{post.image}}" />
+            </div>
         </div>
     </div>
 </article>
