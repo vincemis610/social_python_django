@@ -1,7 +1,7 @@
 body{
   background: #4267B2;
 	font-size: 62.5%;
-	font-family: 'roboto', Helvetica, Arial, serif;
+  font-family: 'verdana', Helvetica, Arial, serif;
 }
 /* Global Styles*/
 h5{
@@ -142,7 +142,9 @@ article{
 }
 
 .container-article{
+  width: 100%;
   display: flex;
+  flex-direction: row;
 }
 
 .container-article .user-profile {
@@ -153,10 +155,19 @@ article{
 }
 .container-article .posts img {
   margin-top: 10px;
-  height: 100px;
-  width: auto;
+  height: auto;
+    width: 150px;
 }
 
+article .delete {
+  padding-left: 65%;
+  margin-top: 10px;
+}
+
+article .delete a {
+  font-size: 12px;
+  color: red;
+}
 article:last-child {
   border-bottom: 0;
 }

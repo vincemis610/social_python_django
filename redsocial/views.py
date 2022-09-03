@@ -39,6 +39,12 @@ def post(request):
         form = PostForm()
     return render(request, 'social/post.html', { 'form': form})
 
+def deletePost(request, id):
+    post = Post.objects.get(id=id)
+    post.delete()
+    return redirect('feed')
+    
+
 def profile(request, username=None):
     curren_user = request.user
     if username and username != curren_user:
